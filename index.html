@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD APP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+ 
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+ 
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+ 
+        button {
+            padding: 10px 15px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            background-color: #007bff;
+        }
+ 
+        button:hover {
+            background-color: #0056b3;
+        }
+ 
+        button.edit {
+            background-color: #28a745;
+        }
+ 
+        button.edit:hover {
+            background-color: #218838;
+        }
+ 
+        button.delete {
+            background-color: #dc3545;
+        }
+ 
+        button.delete:hover {
+            background-color: #c82333;
+        }
+ 
+        .list-item {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+ 
+        .list-item span {
+            flex: 1;
+            font-size: 18px;
+            color: #333;
+        }
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CRUD APP</h1>
+        <div>
+            <input id="new-item" type="text" placeholder="Add a new item">
+            <button onclick="createItem()">ADD</button>
+        </div>
+        <ul id="item-list"></ul>
+        <script src="rest-api.js"></script>
+    </header>
+</body>
+</html>
