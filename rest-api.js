@@ -1,4 +1,4 @@
-const API_URL = "https://crudapp-mn37.onrender.com";
+const API_URL = "http://localhost:5001/api/items";
 const itemList = document.getElementById("item-list");
 const newItemInput = document.getElementById("new-item");
  
